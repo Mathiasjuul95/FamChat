@@ -12,7 +12,7 @@ struct ChatListView: View {
 
     var body: some View {
         List(chats, id: \.self) { chat in
-            NavigationLink(destination: ChatDetailView(chatTitle: chat)) {
+            NavigationLink(destination: ChatView(chatID: chat)) {
                 HStack {
                     Image(systemName: "message.fill")
                         .foregroundColor(.blue)
